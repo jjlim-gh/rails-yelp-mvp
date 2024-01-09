@@ -1,0 +1,17 @@
+<h2 class="m-2">Restaurant List 🍽️</h2>
+
+<div class="row container">
+  <% @restaurants.each do |restaurant|  %>
+    <div class="card p-2 m-2 col-4">
+      <p>Name: <%= restaurant.name %> (<%= restaurant.category %>)</p>
+      <p>Address: <%= restaurant.address %></p>
+      <p>Contact details: <%= restaurant.phone_number %></p>
+    </div>
+  <% end %>
+</div>
+
+<div class="m-2">
+  <button type="button m-2" class="btn btn-secondary">
+  <%= link_to "Add a restaurant", new_restaurant_path %>
+  </button>
+</div>
