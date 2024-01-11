@@ -6,6 +6,7 @@
       <p>Name: <%= restaurant.name %> (<%= restaurant.category %>)</p>
       <p>Address: <%= restaurant.address %></p>
       <p>Contact details: <%= restaurant.phone_number %></p>
+      <%= link_to "More info...", restaurant_path(restaurant) %>
     </div>
   <% end %>
 </div>
