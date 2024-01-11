@@ -5,5 +5,6 @@
     <p>Name: <%= @restaurant.name %> (<%= @restaurant.category %>)</p>
     <p>Address: <%= @restaurant.address %></p>
     <p>Contact details: <%= @restaurant.phone_number %></p>
+    <p><%= link_to "Edit restaurant information...", edit_restaurant_path %></p>
   </div>
 </div>

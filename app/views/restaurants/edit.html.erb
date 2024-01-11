@@ -1,10 +1,10 @@
-<h2 class="m2">Add a new restaurant 🍽️</h2>
+<h2 class="m2">Modify Restaurant Information 🍽️</h2>
 
 <%= simple_form_for @restaurant do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :phone_number %>
   <p>Category
-  <%= f.select :category, options_for_select(%w[chinese italian japanese french belgian]) %></p>
+  <%= f.select :category, options_for_select(%w[Chinese Italian Japanese French Belgian]) %></p>
   <p><%= f.submit %></p>
 <% end %>
